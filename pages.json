@@ -1,17 +1,114 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"uniIdRouter": {}
+  // 首页 - 第一个页面为默认首页
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "校园服务"
+      }
+    },
+    // 用户登录页
+    {
+      "path": "pages/user/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    // 用户注册页
+    {
+      "path": "pages/user/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    // 服务列表页
+    {
+      "path": "pages/service/list",
+      "style": {
+        "navigationBarTitleText": "服务大厅"
+      }
+    },
+    // 订单列表页
+    {
+      "path": "pages/order/list",
+      "style": {
+        "navigationBarTitleText": "我的订单"
+      }
+    },
+    // 消息列表页
+    {
+      "path": "pages/message/list",
+      "style": {
+        "navigationBarTitleText": "消息中心"
+      }
+    },
+    // 个人中心页
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    },
+    // 订单详情页
+    {
+      "path": "pages/order/detail",
+      "style": {
+        "navigationBarTitleText": "订单详情"
+      }
+    },
+    // 订单支付页
+    {
+      "path": "pages/order/pay",
+      "style": {
+        "navigationBarTitleText": "确认支付"
+      }
+    },
+    // 订单评价页
+    {
+      "path": "pages/order/review",
+      "style": {
+        "navigationBarTitleText": "服务评价"
+      }
+    }
+  ],
+  // 全局窗口样式
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园生活服务",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f5f5f5"
+  },
+  // 底部 Tabbar 导航（全局底部栏）
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#3078f7",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home_active.png"
+      },
+      {
+        "pagePath": "pages/service/list",
+        "text": "服务",
+        "iconPath": "static/tab/service.png",
+        "selectedIconPath": "static/tab/service_active.png"
+      },
+      {
+        "pagePath": "pages/order/list",
+        "text": "订单",
+        "iconPath": "static/tab/order.png",
+        "selectedIconPath": "static/tab/order_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tab/mine.png",
+        "selectedIconPath": "static/tab/mine_active.png"
+      }
+    ]
+  }
 }
